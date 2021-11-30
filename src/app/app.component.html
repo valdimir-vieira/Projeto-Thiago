@@ -1,0 +1,38 @@
+
+<mat-toolbar class="header">
+  <a [routerLink]="['/home']"  style="color: black;">Grandes Filmes</a>
+</mat-toolbar>
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav  #sidenav mode="side" opened class="example-sidenav">
+    <h3>Categorias</h3>
+    <a [routerLink]="['/home']">Home</a>
+    <br><br>
+    <a [routerLink]="['/acao']">Ação</a>
+    <br><br>
+    <a [routerLink]="['/aventura']">Aventura</a>
+    <br><br>
+    <a [routerLink]="['/comedia']">Comédia</a>
+    <br><br>
+    <a [routerLink]="['/desenho']">Desenho</a> 
+     <br><br>
+    <a [routerLink]="['/documentario']">Documentário</a>
+    <br><br>
+    <a [routerLink]="['/drama']">Drama</a>
+    <br><br>
+    <a [routerLink]="['/faroeste']">Faroeste</a>
+    <br><br>
+    <a [routerLink]="['/ficcao']">Ficção</a>
+    <br><br>
+    <a [routerLink]="['/guerra']">Guerra</a>
+    <br><br>
+    <a [routerLink]="['/terror']">Terror</a>
+   
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+  
+</mat-sidenav-container>
+ 
